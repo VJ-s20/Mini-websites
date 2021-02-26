@@ -1,0 +1,98 @@
+body{
+    background: url('Images/pexels-ketut-subiyanto-4720236.jpg')no-repeat;
+    margin: auto;
+    padding: 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 23px;
+
+}
+.header{
+    display: flex;
+} 
+.logo{
+    text-align: center;
+}
+.logo img{
+    filter: invert(100%);
+    display: block;
+    margin: 10px auto;
+    width: 80px;
+    height: 50px;
+}
+.mid{
+    flex-direction: column;
+    width: 668px;
+    height: 82px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.call_us{
+    display: flex;
+    flex-direction:row-reverse;
+    height: 30px;
+    width: 150px;
+    margin: auto;
+    float: right;
+
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar li{
+    list-style: none;
+    display: inline;
+}
+.listBox:hover{
+    color: red;
+    text-decoration: underline;
+}
+.btn{
+    border-radius: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.btn:hover{
+    cursor: pointer;
+    color: grey;
+}
+.info{
+    /* border: 3px solid; */
+    margin: auto;
+    width: 300px;
+    padding: 5px 5px;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.info input{
+    text-align: center; 
+    border: 2px solid;
+    border-radius: 10px;
+    width: 300px;
+}
+.submit {
+    text-align: center;
+}
+.submit button{
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 10px;
+    margin: 3px auto;
+    width: 100px;
+    font-weight: 900;
+
+}
+
+.submit button:hover{
+    cursor: pointer;
+    color: grey;
+}
