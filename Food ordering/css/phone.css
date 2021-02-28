@@ -1,0 +1,59 @@
+#logo{
+    flex-direction: column;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+}
+#navbar li{
+    font-size: 1rem;
+}
+#navbar li a{
+    padding: 0px 6px;
+    margin: -11px 12px;
+    
+}
+
+/* Home */
+.h-primary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+#home{
+    height:50vh ;
+    padding: 3px 68px;
+
+}
+#home::before{
+    height:60% ;
+}
+.btn{
+    font-size: 0.7rem;
+    margin: 3px;
+}
+#home p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+/* Services*/
+
+.Services{
+    flex-wrap: wrap;
+    margin: 15px 15px;
+}
+.h2-secondary{
+    font-size: 2.4rem;
+}
+
+/*form */
+.feedback input{
+    width: 30vw;
+    margin: 3px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.feedback button{
+    width: 13vw;
+}
