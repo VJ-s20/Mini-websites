@@ -6,53 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple clock</title>
-    <style>
-        #container {
-            filter: invert(100%);
-            border: 3px solid red;
-            position: relative;
-            height: 40vw;
-            width: 40vw;
-            background-image: url(clock.png);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            margin: auto;
-        }
-
-        #hour,
-        #minute,
-        #seconds {
-            background-color: black;
-            position: absolute;
-            transform-origin: bottom;
-            border-radius: 10px;
-        }
-
-        #hour {
-            top: 27%;
-            width: 3%;
-            height: 21%;
-            left: 49%;
-        }
-
-        #minute {
-
-            top: 23%;
-            width: 2%;
-            height: 26%;
-            left: 48.85%;
-
-
-        }
-
-        #seconds {
-            top: 17%;
-            width: 1%;
-            height: 33%;
-            left: 49.88%;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="update.js"></script>
 </head>
 
 <body>
@@ -61,23 +16,6 @@
         <div id="minute"></div>
         <div id="seconds"></div>
     </div>
-    <script>
-        setInterval(() => {
-            d=new Date();
-            // hour=document.getElementById("hour");
-            htime=d.getHours();           
-            mtime=d.getMinutes();           
-            stime=d.getSeconds();           
-            hRotation=30*htime+mtime/2;
-            mRotation=6*mtime;
-            sRotation=6*stime;
-            hour.style.transform=`rotate(${hRotation}deg)`;
-            minute.style.transform=`rotate(${mRotation}deg)`;
-            seconds.style.transform=`rotate(${sRotation}deg)`;
-
-
-
-        }, 1000);
-    </script>
+    
 </body>
 </html>
